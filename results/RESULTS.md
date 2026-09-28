@@ -81,5 +81,5 @@ rated, so this is a hint only.
 
 ## Plans and cost
 
-Jev followed a ready-made stroke list and recovered from every interrupted stroke (14 of 14). Over the project it made
-5,294 planning runs for $3.43, at about 0.2 s per decision.
+Jev followed a ready-made stroke list and recovered from every interrupted stroke (14 of 14). In one round it made
+5,294 planning runs for about $3.43, at about 0.2 s per decision.
