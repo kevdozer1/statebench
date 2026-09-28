@@ -1,0 +1,47 @@
+{
+ "starry_night": {
+  "title": "The Starry Night, Vincent van Gogh, 1889",
+  "file": "runs/turn15/paintings/starry_night.jpg",
+  "source": "Wikimedia Commons, Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+  "public_domain_reason": "artist died 1890, more than 100 years ago; faithful reproduction of a 2D public-domain work"
+ },
+ "great_wave": {
+  "title": "The Great Wave off Kanagawa, Katsushika Hokusai, about 1831",
+  "file": "runs/turn15/paintings/great_wave.jpg",
+  "source": "Wikimedia Commons, Tsunami_by_hokusai_19th_century.jpg",
+  "public_domain_reason": "artist died 1849, more than 100 years ago; faithful reproduction of a 2D public-domain work"
+ },
+ "mona_lisa": {
+  "title": "Mona Lisa, Leonardo da Vinci, about 1503-1519",
+  "file": "runs/turn15/paintings/mona_lisa.jpg",
+  "source": "Wikimedia Commons, Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+  "public_domain_reason": "artist died 1519; faithful reproduction of a 2D public-domain work"
+ },
+ "cat": {
+  "title": "Cat silhouette.svg",
+  "file": "runs/turn16/references/cat.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Cat_silhouette.svg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/60/Cat_silhouette.svg",
+  "rendered_png": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Cat_silhouette.svg/960px-Cat_silhouette.svg.png",
+  "licence_on_page": "Public domain",
+  "public_domain_reason": "PD-self: the author released it into the public domain (Wikimedia Commons licence template PD-self)"
+ },
+ "fish": {
+  "title": "Fish icon.svg",
+  "file": "runs/turn16/references/fish.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Fish_icon.svg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Fish_icon.svg",
+  "rendered_png": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Fish_icon.svg/960px-Fish_icon.svg.png",
+  "licence_on_page": "Public domain",
+  "public_domain_reason": "PD-author: released into the public domain by its author, the Swedish Road Administration (template PD-author)"
+ },
+ "star": {
+  "title": "Five Pointed Star Solid.svg",
+  "file": "runs/turn16/references/star.png",
+  "source": "https://commons.wikimedia.org/wiki/File:Five_Pointed_Star_Solid.svg",
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Five_Pointed_Star_Solid.svg",
+  "rendered_png": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Five_Pointed_Star_Solid.svg/960px-Five_Pointed_Star_Solid.svg.png",
+  "licence_on_page": "Public domain",
+  "public_domain_reason": "PD-shape: simple geometric shape, not eligible for copyright (template PD-shape)"
+ }
+}
