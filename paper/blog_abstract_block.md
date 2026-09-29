@@ -1,0 +1,9 @@
+# Standalone abstract block for the blog post
+
+Drop this under the post's title, with the links to the paper PDF and the code.
+
+---
+
+> **Abstract.** Language models increasingly act in visual and spatial domains through text, yet it is not well characterized which information a text description of a robot scene must carry for a model to act on it. We present statebench, a set of simulated tasks in MuJoCo (pick-and-place, a button press, pen tracing with a dexterous hand, and drawing from a reference image) in which each scene is written out as a structured state: tracked positions, a skill menu, optional derived labels and a goal line. A fast System 1 model (Jev) reads the state and picks the next skill, and a slower System 2 model (GPT-6 Sol) writes goals from demonstration video and stroke plans from reference images. In pre-registered ablations with 50 seeded episodes per condition, tracked positions with a complete goal reach 50/50 on pick-and-place, and adding derived meaning labels and procedure fields lowers success to 45/50. A goal that leaves out the ending scores 17/50, below no goal at all (49/50), because the narrow skill menu encodes the task by itself, and derived labels partly repair the incomplete goal (28/50 and 47/50). Contact errors are asymmetric: a false "not touching" ruins every drawing, and a false "touching" is harmless. Goals written from video rarely state how the task ends and copy failed attempts as intent, and a finish skill that lifts the pen removes the resulting drawing failure. When Sol plans drawings, one-shot programs receive the highest blind ratings, rounds of the whole picture rate clearly lower, and part-wise decomposition needs an explicit layout to approach one shot. We release the harness, tasks, verifiers and statistics code.
+>
+> **Full paper:** [PDF](https://kevdozer1.com/assets/pdf/statebench_paper.pdf) · [Code](https://github.com/kevdozer1/statebench)
