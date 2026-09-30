@@ -5,7 +5,7 @@ written as tracked positions, a menu of skills, a few yes/no labels and a goal. 
 it and picks the next skill. A slower model (Sol) writes what no script can, like the goal or every stroke of a
 drawing. Over 19 rounds I removed and added pieces of the state and measured what changed.
 
-Write-up: [How chatbotics works](https://kevdozer1.com/blog/2026/training-chatbots-to-use-robots/). Paper: [PDF](https://kevdozer1.com/assets/pdf/statebench_paper.pdf), with its source in [paper/](paper/).
+Write-up: [How to train chatbots to use robots](https://kevdozer1.com/blog/2026/training-chatbots-to-use-robots/). Paper: [PDF](https://kevdozer1.com/assets/pdf/statebench_paper.pdf), with its source in [paper/](paper/).
 
 ## What it found
 

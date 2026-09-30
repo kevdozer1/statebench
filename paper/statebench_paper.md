@@ -229,7 +229,7 @@ statebench measures what a text description of a robot scene must contain for a 
 
 ## Code and data
 
-The harness, tasks, verifiers, statistics code and figures are available at <https://github.com/kevdozer1/statebench>. The companion blog post, *How chatbotics works*, is at <https://kevdozer1.com/blog/2026/training-chatbots-to-use-robots/>.
+The harness, tasks, verifiers, statistics code and figures are available at <https://github.com/kevdozer1/statebench>. The companion blog post, *How to train chatbots to use robots*, is at <https://kevdozer1.com/blog/2026/training-chatbots-to-use-robots/>.
 
 ## A. An Example Prompt
 
