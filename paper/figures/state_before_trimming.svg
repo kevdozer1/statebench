@@ -1,127 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" font-family="Segoe UI, Lucida Grande, Helvetica Neue, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" font-family="Segoe UI, Lucida Grande, Helvetica Neue, Arial, sans-serif">
 <defs>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#f3efff"/><stop offset="0.55" stop-color="#fbf8ff"/><stop offset="1" stop-color="#fff5e4"/>
+  <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f1ecff"/><stop offset="0.55" stop-color="#fbf8ff"/><stop offset="1" stop-color="#fff6e6"/>
   </linearGradient>
-  <radialGradient id="cloud" gradientUnits="userSpaceOnUse" cx="760" cy="370" r="820">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.45" stop-color="#efe9fd"/><stop offset="1" stop-color="#c3b3f3"/>
+  <radialGradient id="glow" cx="0.5" cy="0.45" r="0.6">
+    <stop offset="0" stop-color="#ffffff" stop-opacity="0.9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="blobfill" cx="0.42" cy="0.38" r="0.75">
+    <stop offset="0" stop-color="#faf7ff"/><stop offset="0.45" stop-color="#cdbff9"/><stop offset="0.85" stop-color="#9d86ec"/>
+    <stop offset="1" stop-color="#7b5fd8"/>
   </radialGradient>
   <linearGradient id="gloss" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
   </linearGradient>
   <radialGradient id="bubble" cx="0.35" cy="0.3" r="0.7">
     <stop offset="0" stop-color="#ffffff" stop-opacity="0.95"/><stop offset="0.6" stop-color="#efe8ff" stop-opacity="0.35"/>
-    <stop offset="1" stop-color="#ffe3b8" stop-opacity="0.2"/>
+    <stop offset="1" stop-color="#ffe3b8" stop-opacity="0.15"/>
   </radialGradient>
-  <linearGradient id="chip" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#cfc2fb"/><stop offset="0.5" stop-color="#a893f0"/><stop offset="1" stop-color="#7f66d9"/>
-  </linearGradient>
   <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
-    <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#6a52c4" flood-opacity="0.22"/>
+    <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#6a52c4" flood-opacity="0.28"/>
   </filter>
-  <filter id="soft" x="-30%" y="-30%" width="160%" height="170%">
-    <feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#6a52c4" flood-opacity="0.2"/>
+  <filter id="soft" x="-20%" y="-40%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#6a52c4" flood-opacity="0.22"/>
   </filter>
-  <clipPath id="cloudclip"><circle cx="430" cy="370" r="215"/><circle cx="700" cy="290" r="225"/><circle cx="985" cy="290" r="220"/><circle cx="1245" cy="370" r="205"/><circle cx="1300" cy="585" r="200"/><circle cx="1085" cy="715" r="200"/><circle cx="790" cy="730" r="205"/><circle cx="500" cy="690" r="200"/><circle cx="330" cy="530" r="180"/><circle cx="800" cy="510" r="300"/><circle cx="1060" cy="500" r="260"/><circle cx="560" cy="500" r="250"/></clipPath>
+  <clipPath id="blobclip"><path transform="translate(21 -30) scale(1.32 1.12)" d="M 150 440 C 130 260, 320 130, 540 142 C 720 152, 830 100, 945 196 C 1060 292, 1030 430, 1020 530 C 1008 650, 915 772, 705 782 C 520 792, 425 752, 300 708 C 178 664, 166 570, 150 440 Z"/></clipPath>
 </defs>
-<rect width="1600" height="980" fill="url(#bg)"/>
-<circle cx="1520" cy="110" r="40" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.8" stroke-width="2"/>
-<circle cx="1455" cy="70" r="15" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.8" stroke-width="2"/>
-<circle cx="1530" cy="900" r="24" fill="url(#bubble)" stroke="#fff" stroke-opacity="0.8" stroke-width="2"/>
-<!-- the thought cloud: outline pass, then fill pass on top so inner seams vanish -->
-<g filter="url(#shadow)"><g fill="#ffffff" stroke="#ffffff" stroke-width="10"><circle cx="430" cy="370" r="215"/><circle cx="700" cy="290" r="225"/><circle cx="985" cy="290" r="220"/><circle cx="1245" cy="370" r="205"/><circle cx="1300" cy="585" r="200"/><circle cx="1085" cy="715" r="200"/><circle cx="790" cy="730" r="205"/><circle cx="500" cy="690" r="200"/><circle cx="330" cy="530" r="180"/><circle cx="800" cy="510" r="300"/><circle cx="1060" cy="500" r="260"/><circle cx="560" cy="500" r="250"/></g></g>
-<g fill="url(#cloud)"><circle cx="430" cy="370" r="215"/><circle cx="700" cy="290" r="225"/><circle cx="985" cy="290" r="220"/><circle cx="1245" cy="370" r="205"/><circle cx="1300" cy="585" r="200"/><circle cx="1085" cy="715" r="200"/><circle cx="790" cy="730" r="205"/><circle cx="500" cy="690" r="200"/><circle cx="330" cy="530" r="180"/><circle cx="800" cy="510" r="300"/><circle cx="1060" cy="500" r="260"/><circle cx="560" cy="500" r="250"/></g>
-<g clip-path="url(#cloudclip)"><ellipse cx="800" cy="135" rx="620" ry="120" fill="url(#gloss)" opacity="0.7"/></g>
-<!-- thought trail down to the model -->
-<circle cx="205" cy="815" r="30" fill="url(#cloud)" stroke="#ffffff" stroke-width="5" filter="url(#soft)"/>
-<circle cx="148" cy="872" r="18" fill="url(#cloud)" stroke="#ffffff" stroke-width="4" filter="url(#soft)"/>
-<g filter="url(#soft)"><rect x="40" y="895" width="120" height="52" rx="26" fill="url(#chip)" stroke="#ffffff" stroke-width="3"/></g>
-<rect x="52" y="899" width="96" height="20" rx="10" fill="#ffffff" opacity="0.45"/>
-<text x="100" y="930" text-anchor="middle" font-size="24" font-weight="700" fill="#ffffff">LLM</text>
-<text x="800" y="190" text-anchor="middle" font-size="40" font-weight="600" fill="#3b2a6b">everything we tried</text>
+<rect width="1600" height="900" fill="url(#sky)"/>
+<rect width="1600" height="900" fill="url(#glow)"/>
+<circle cx="1480" cy="140" r="46" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+<circle cx="1400" cy="96" r="18" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+<circle cx="140" cy="150" r="30" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+<circle cx="1500" cy="780" r="30" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+<circle cx="120" cy="760" r="22" fill="url(#bubble)" stroke="#ffffff" stroke-opacity="0.8" stroke-width="2"/>
+<g filter="url(#shadow)"><path transform="translate(21 -30) scale(1.32 1.12)" d="M 150 440 C 130 260, 320 130, 540 142 C 720 152, 830 100, 945 196 C 1060 292, 1030 430, 1020 530 C 1008 650, 915 772, 705 782 C 520 792, 425 752, 300 708 C 178 664, 166 570, 150 440 Z" fill="url(#blobfill)" stroke="#ffffff" stroke-width="5"/></g>
+<g clip-path="url(#blobclip)"><ellipse cx="760" cy="160" rx="560" ry="160" fill="url(#gloss)" opacity="0.85"/></g>
+<text x="800" y="205" text-anchor="middle" font-size="46" font-weight="600" fill="#3b2a6b">structured state</text>
 
-  <radialGradient id="b0" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#fffaf0"/><stop offset="0.55" stop-color="#fffaf0"/><stop offset="1" stop-color="#f6c177"/>
+  <radialGradient id="t0" gradientUnits="userSpaceOnUse" cx="575" cy="294" r="205">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="545" cy="370" r="96" fill="url(#b0)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="533.48" cy="320.08" rx="59.519999999999996" ry="26.880000000000003" fill="url(#gloss)" opacity="0.85"/>
-  <text x="545" y="363.2" text-anchor="middle" font-size="30" font-weight="600" fill="#5a3a12">tracking</text><text x="545" y="397.8" text-anchor="middle" font-size="30" font-weight="600" fill="#5a3a12">data</text>
-  <radialGradient id="b1" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#fffaf0"/><stop offset="0.55" stop-color="#fffaf0"/><stop offset="1" stop-color="#f6c177"/>
+  <clipPath id="c0"><ellipse cx="615.0" cy="325.0" rx="165.0" ry="44.0"/><ellipse cx="522.6" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="624.9" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="714.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="549.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="681.0" cy="352.3" rx="28.2" ry="28.2"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="615.0" cy="325.0" rx="165.0" ry="44.0"/><ellipse cx="522.6" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="624.9" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="714.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="549.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="681.0" cy="352.3" rx="28.2" ry="28.2"/><circle cx="492.8" cy="381.0" r="9"/><circle cx="474.8" cy="397.0" r="5.5"/></g></g>
+  <g fill="url(#t0)"><ellipse cx="615.0" cy="325.0" rx="165.0" ry="44.0"/><ellipse cx="522.6" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="624.9" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="714.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="549.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="681.0" cy="352.3" rx="28.2" ry="28.2"/><circle cx="492.8" cy="381.0" r="9"/><circle cx="474.8" cy="397.0" r="5.5"/></g>
+  <g clip-path="url(#c0)"><ellipse cx="615" cy="288" rx="152" ry="32" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="615" y="335.1" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">where is everything?</text>
+  <radialGradient id="t1" gradientUnits="userSpaceOnUse" cx="958" cy="294" r="192">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="800" cy="340" r="96" fill="url(#b1)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="788.48" cy="290.08" rx="59.519999999999996" ry="26.880000000000003" fill="url(#gloss)" opacity="0.85"/>
-  <text x="800" y="333.2" text-anchor="middle" font-size="30" font-weight="600" fill="#5a3a12">action</text><text x="800" y="367.8" text-anchor="middle" font-size="30" font-weight="600" fill="#5a3a12">menu</text>
-  <radialGradient id="b2" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#fffaf0"/><stop offset="0.55" stop-color="#fffaf0"/><stop offset="1" stop-color="#f6c177"/>
+  <clipPath id="c1"><ellipse cx="995.0" cy="325.0" rx="155.0" ry="44.0"/><ellipse cx="908.2" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="1004.3" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="1088.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="933.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="1057.0" cy="352.3" rx="28.2" ry="28.2"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="995.0" cy="325.0" rx="155.0" ry="44.0"/><ellipse cx="908.2" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="1004.3" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="1088.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="933.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="1057.0" cy="352.3" rx="28.2" ry="28.2"/><circle cx="1110.4" cy="381.0" r="9"/><circle cx="1128.4" cy="397.0" r="5.5"/></g></g>
+  <g fill="url(#t1)"><ellipse cx="995.0" cy="325.0" rx="155.0" ry="44.0"/><ellipse cx="908.2" cy="298.6" rx="28.2" ry="28.2"/><ellipse cx="1004.3" cy="292.4" rx="32.6" ry="32.6"/><ellipse cx="1088.0" cy="300.4" rx="26.4" ry="26.4"/><ellipse cx="933.0" cy="351.4" rx="26.4" ry="26.4"/><ellipse cx="1057.0" cy="352.3" rx="28.2" ry="28.2"/><circle cx="1110.4" cy="381.0" r="9"/><circle cx="1128.4" cy="397.0" r="5.5"/></g>
+  <g clip-path="url(#c1)"><ellipse cx="995" cy="288" rx="143" ry="32" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="995" y="335.1" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">what can I do next?</text>
+  <radialGradient id="t2" gradientUnits="userSpaceOnUse" cx="408" cy="474" r="167">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="1055" cy="370" r="96" fill="url(#b2)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1043.48" cy="320.08" rx="59.519999999999996" ry="26.880000000000003" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1055" y="380.5" text-anchor="middle" font-size="30" font-weight="600" fill="#5a3a12">goal</text>
-  <radialGradient id="b3" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#bca8f5"/>
+  <clipPath id="c2"><ellipse cx="440.0" cy="505.0" rx="135.0" ry="44.0"/><ellipse cx="364.4" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="448.1" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="521.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="386.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="494.0" cy="532.3" rx="28.2" ry="28.2"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="440.0" cy="505.0" rx="135.0" ry="44.0"/><ellipse cx="364.4" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="448.1" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="521.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="386.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="494.0" cy="532.3" rx="28.2" ry="28.2"/><circle cx="338.2" cy="561.0" r="9"/><circle cx="320.2" cy="577.0" r="5.5"/></g></g>
+  <g fill="url(#t2)"><ellipse cx="440.0" cy="505.0" rx="135.0" ry="44.0"/><ellipse cx="364.4" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="448.1" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="521.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="386.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="494.0" cy="532.3" rx="28.2" ry="28.2"/><circle cx="338.2" cy="561.0" r="9"/><circle cx="320.2" cy="577.0" r="5.5"/></g>
+  <g clip-path="url(#c2)"><ellipse cx="440" cy="468" rx="124" ry="32" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="440" y="515.1" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">what's the goal?</text>
+  <radialGradient id="t3" gradientUnits="userSpaceOnUse" cx="762" cy="464" r="198">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="1250" cy="510" r="64" fill="url(#b3)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1242.32" cy="476.72" rx="39.68" ry="17.92" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1250" y="518.4" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">contact</text>
-  <radialGradient id="b4" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#bca8f5"/>
+  <clipPath id="c3"><ellipse cx="800.0" cy="505.0" rx="160.0" ry="58.0"/><ellipse cx="710.4" cy="470.2" rx="37.1" ry="37.1"/><ellipse cx="809.6" cy="462.1" rx="42.9" ry="42.9"/><ellipse cx="896.0" cy="472.5" rx="34.8" ry="34.8"/><ellipse cx="736.0" cy="539.8" rx="34.8" ry="34.8"/><ellipse cx="864.0" cy="541.0" rx="37.1" ry="37.1"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="800.0" cy="505.0" rx="160.0" ry="58.0"/><ellipse cx="710.4" cy="470.2" rx="37.1" ry="37.1"/><ellipse cx="809.6" cy="462.1" rx="42.9" ry="42.9"/><ellipse cx="896.0" cy="472.5" rx="34.8" ry="34.8"/><ellipse cx="736.0" cy="539.8" rx="34.8" ry="34.8"/><ellipse cx="864.0" cy="541.0" rx="37.1" ry="37.1"/><circle cx="918.8" cy="575.0" r="9"/><circle cx="936.8" cy="591.0" r="5.5"/></g></g>
+  <g fill="url(#t3)"><ellipse cx="800.0" cy="505.0" rx="160.0" ry="58.0"/><ellipse cx="710.4" cy="470.2" rx="37.1" ry="37.1"/><ellipse cx="809.6" cy="462.1" rx="42.9" ry="42.9"/><ellipse cx="896.0" cy="472.5" rx="34.8" ry="34.8"/><ellipse cx="736.0" cy="539.8" rx="34.8" ry="34.8"/><ellipse cx="864.0" cy="541.0" rx="37.1" ry="37.1"/><circle cx="918.8" cy="575.0" r="9"/><circle cx="936.8" cy="591.0" r="5.5"/></g>
+  <g clip-path="url(#c3)"><ellipse cx="800" cy="456" rx="147" ry="42" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="800" y="498.6" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">is the arm holding</text><text x="800" y="531.6" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">something?</text>
+  <radialGradient id="t4" gradientUnits="userSpaceOnUse" cx="1126" cy="474" r="174">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="1385" cy="630" r="66" fill="url(#b4)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1377.08" cy="595.68" rx="40.92" ry="18.48" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1385" y="624.6" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">grip</text><text x="1385" y="652.2" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">state</text>
-  <radialGradient id="b5" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#bca8f5"/>
+  <clipPath id="c4"><ellipse cx="1160.0" cy="505.0" rx="140.0" ry="44.0"/><ellipse cx="1081.6" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="1168.4" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="1244.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="1104.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="1216.0" cy="532.3" rx="28.2" ry="28.2"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="1160.0" cy="505.0" rx="140.0" ry="44.0"/><ellipse cx="1081.6" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="1168.4" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="1244.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="1104.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="1216.0" cy="532.3" rx="28.2" ry="28.2"/><circle cx="1265.2" cy="561.0" r="9"/><circle cx="1283.2" cy="577.0" r="5.5"/></g></g>
+  <g fill="url(#t4)"><ellipse cx="1160.0" cy="505.0" rx="140.0" ry="44.0"/><ellipse cx="1081.6" cy="478.6" rx="28.2" ry="28.2"/><ellipse cx="1168.4" cy="472.4" rx="32.6" ry="32.6"/><ellipse cx="1244.0" cy="480.4" rx="26.4" ry="26.4"/><ellipse cx="1104.0" cy="531.4" rx="26.4" ry="26.4"/><ellipse cx="1216.0" cy="532.3" rx="28.2" ry="28.2"/><circle cx="1265.2" cy="561.0" r="9"/><circle cx="1283.2" cy="577.0" r="5.5"/></g>
+  <g clip-path="url(#c4)"><ellipse cx="1160" cy="468" rx="129" ry="32" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="1160" y="515.1" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">am I touching it?</text>
+  <radialGradient id="t5" gradientUnits="userSpaceOnUse" cx="605" cy="631" r="180">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="1240" cy="680" r="72" fill="url(#b5)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1231.36" cy="642.56" rx="44.64" ry="20.160000000000004" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1240" y="675.1" text-anchor="middle" font-size="22" font-weight="500" fill="#3b2a6b">moving</text><text x="1240" y="700.4" text-anchor="middle" font-size="22" font-weight="500" fill="#3b2a6b">with gripper</text>
-  <radialGradient id="b6" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#bca8f5"/>
+  <clipPath id="c5"><ellipse cx="640.0" cy="672.0" rx="145.0" ry="58.0"/><ellipse cx="558.8" cy="637.2" rx="37.1" ry="37.1"/><ellipse cx="648.7" cy="629.1" rx="42.9" ry="42.9"/><ellipse cx="727.0" cy="639.5" rx="34.8" ry="34.8"/><ellipse cx="582.0" cy="706.8" rx="34.8" ry="34.8"/><ellipse cx="698.0" cy="708.0" rx="37.1" ry="37.1"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="640.0" cy="672.0" rx="145.0" ry="58.0"/><ellipse cx="558.8" cy="637.2" rx="37.1" ry="37.1"/><ellipse cx="648.7" cy="629.1" rx="42.9" ry="42.9"/><ellipse cx="727.0" cy="639.5" rx="34.8" ry="34.8"/><ellipse cx="582.0" cy="706.8" rx="34.8" ry="34.8"/><ellipse cx="698.0" cy="708.0" rx="37.1" ry="37.1"/><circle cx="531.4" cy="742.0" r="9"/><circle cx="513.4" cy="758.0" r="5.5"/></g></g>
+  <g fill="url(#t5)"><ellipse cx="640.0" cy="672.0" rx="145.0" ry="58.0"/><ellipse cx="558.8" cy="637.2" rx="37.1" ry="37.1"/><ellipse cx="648.7" cy="629.1" rx="42.9" ry="42.9"/><ellipse cx="727.0" cy="639.5" rx="34.8" ry="34.8"/><ellipse cx="582.0" cy="706.8" rx="34.8" ry="34.8"/><ellipse cx="698.0" cy="708.0" rx="37.1" ry="37.1"/><circle cx="531.4" cy="742.0" r="9"/><circle cx="513.4" cy="758.0" r="5.5"/></g>
+  <g clip-path="url(#c5)"><ellipse cx="640" cy="623" rx="133" ry="42" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="640" y="665.6" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">how many tries</text><text x="640" y="698.6" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">so far?</text>
+  <radialGradient id="t6" gradientUnits="userSpaceOnUse" cx="949" cy="641" r="186">
+    <stop offset="0" stop-color="#ffffff"/><stop offset="0.6" stop-color="#fffaf0"/><stop offset="1" stop-color="#f8d9a6"/>
   </radialGradient>
-  <g filter="url(#soft)"><circle cx="1090" cy="595" r="66" fill="url(#b6)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1082.08" cy="560.68" rx="40.92" ry="18.48" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1090" y="589.6" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">in the</text><text x="1090" y="617.2" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">tray</text>
-  <radialGradient id="b7" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#bca8f5"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="1090" cy="755" r="64" fill="url(#b7)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="1082.32" cy="721.72" rx="39.68" ry="17.92" fill="url(#gloss)" opacity="0.85"/>
-  <text x="1090" y="763.4" text-anchor="middle" font-size="24" font-weight="500" fill="#3b2a6b">released</text>
-  <radialGradient id="b8" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#f8cda4"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="385" cy="560" r="72" fill="url(#b8)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="376.36" cy="522.56" rx="44.64" ry="20.160000000000004" fill="url(#gloss)" opacity="0.85"/>
-  <text x="385" y="554.6" text-anchor="middle" font-size="24" font-weight="500" fill="#6b3d14">lined up</text><text x="385" y="582.2" text-anchor="middle" font-size="24" font-weight="500" fill="#6b3d14">to grasp</text>
-  <radialGradient id="b9" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#f8cda4"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="555" cy="650" r="78" fill="url(#b9)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="545.64" cy="609.44" rx="48.36" ry="21.840000000000003" fill="url(#gloss)" opacity="0.85"/>
-  <text x="555" y="645.1" text-anchor="middle" font-size="22" font-weight="500" fill="#6b3d14">estimate</text><text x="555" y="670.4" text-anchor="middle" font-size="22" font-weight="500" fill="#6b3d14">out of date</text>
-  <radialGradient id="b10" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#f8cda4"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="390" cy="740" r="64" fill="url(#b10)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="382.32" cy="706.72" rx="39.68" ry="17.92" fill="url(#gloss)" opacity="0.85"/>
-  <text x="390" y="734.6" text-anchor="middle" font-size="24" font-weight="500" fill="#6b3d14">grab</text><text x="390" y="762.2" text-anchor="middle" font-size="24" font-weight="500" fill="#6b3d14">attempts</text>
-  <radialGradient id="b11" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#e6b6e7"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="800" cy="595" r="70" fill="url(#b11)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="791.6" cy="558.6" rx="43.4" ry="19.6" fill="url(#gloss)" opacity="0.85"/>
-  <text x="800" y="589.6" text-anchor="middle" font-size="24" font-weight="500" fill="#5a2d5e">tracking</text><text x="800" y="617.2" text-anchor="middle" font-size="24" font-weight="500" fill="#5a2d5e">history</text>
-  <radialGradient id="b12" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#e6b6e7"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="930" cy="730" r="64" fill="url(#b12)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="922.32" cy="696.72" rx="39.68" ry="17.92" fill="url(#gloss)" opacity="0.85"/>
-  <text x="930" y="724.6" text-anchor="middle" font-size="24" font-weight="500" fill="#5a2d5e">last</text><text x="930" y="752.2" text-anchor="middle" font-size="24" font-weight="500" fill="#5a2d5e">actions</text>
-  <radialGradient id="b13" cx="0.4" cy="0.32" r="0.75">
-    <stop offset="0" stop-color="#ffffff"/><stop offset="0.55" stop-color="#ffffff"/><stop offset="1" stop-color="#e6b6e7"/>
-  </radialGradient>
-  <g filter="url(#soft)"><circle cx="725" cy="760" r="62" fill="url(#b13)" stroke="#ffffff" stroke-width="4"/></g>
-  <ellipse cx="717.56" cy="727.76" rx="38.44" ry="17.360000000000003" fill="url(#gloss)" opacity="0.85"/>
-  <text x="725" y="767.7" text-anchor="middle" font-size="22" font-weight="500" fill="#5a2d5e">calibration</text><text x="1330" y="445" text-anchor="middle" font-size="21" font-style="italic" fill="#7b6aa8">meaning labels</text><text x="305" y="460" text-anchor="middle" font-size="21" font-style="italic" fill="#7b6aa8">procedure fields</text><text x="800" y="500" text-anchor="middle" font-size="21" font-style="italic" fill="#7b6aa8">history</text>
+  <clipPath id="c6"><ellipse cx="985.0" cy="672.0" rx="150.0" ry="44.0"/><ellipse cx="901.0" cy="645.6" rx="28.2" ry="28.2"/><ellipse cx="994.0" cy="639.4" rx="32.6" ry="32.6"/><ellipse cx="1075.0" cy="647.4" rx="26.4" ry="26.4"/><ellipse cx="925.0" cy="698.4" rx="26.4" ry="26.4"/><ellipse cx="1045.0" cy="699.3" rx="28.2" ry="28.2"/></clipPath>
+  <g filter="url(#soft)"><g fill="#ffffff" stroke="#ffffff" stroke-width="7"><ellipse cx="985.0" cy="672.0" rx="150.0" ry="44.0"/><ellipse cx="901.0" cy="645.6" rx="28.2" ry="28.2"/><ellipse cx="994.0" cy="639.4" rx="32.6" ry="32.6"/><ellipse cx="1075.0" cy="647.4" rx="26.4" ry="26.4"/><ellipse cx="925.0" cy="698.4" rx="26.4" ry="26.4"/><ellipse cx="1045.0" cy="699.3" rx="28.2" ry="28.2"/><circle cx="1097.0" cy="728.0" r="9"/><circle cx="1115.0" cy="744.0" r="5.5"/></g></g>
+  <g fill="url(#t6)"><ellipse cx="985.0" cy="672.0" rx="150.0" ry="44.0"/><ellipse cx="901.0" cy="645.6" rx="28.2" ry="28.2"/><ellipse cx="994.0" cy="639.4" rx="32.6" ry="32.6"/><ellipse cx="1075.0" cy="647.4" rx="26.4" ry="26.4"/><ellipse cx="925.0" cy="698.4" rx="26.4" ry="26.4"/><ellipse cx="1045.0" cy="699.3" rx="28.2" ry="28.2"/><circle cx="1097.0" cy="728.0" r="9"/><circle cx="1115.0" cy="744.0" r="5.5"/></g>
+  <g clip-path="url(#c6)"><ellipse cx="985" cy="635" rx="138" ry="32" fill="url(#gloss)" opacity="0.8"/></g>
+  <text x="985" y="682.1" text-anchor="middle" font-size="28" font-weight="500" fill="#3b2a6b">what did I just do?</text>
 </svg>
